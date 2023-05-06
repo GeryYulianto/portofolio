@@ -259,6 +259,7 @@ h1 {
 
 /* ----------- form ----------- */
 .right-contact {
+    position: relative;
     margin-top: -15px;
 }
 
@@ -271,7 +272,22 @@ h1 {
     border-radius: 10px;
 }
 
-#message-email {
+#message {
     text-align: top;
     padding: 80px 10px;
+}
+
+.submit-email {
+    border-color: rgb(57, 255, 20);
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 750%);
+    padding: 4px 10px;
+    width: 100px;
+}
+
+.submit-email:hover {
+    background-color: rgb(24, 66, 11);
 }
