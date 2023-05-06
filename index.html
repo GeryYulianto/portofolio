@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="porto.css">
     <script src="https://kit.fontawesome.com/eb78a7691b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("a_L4fqWNNmJeBfJsQ");
+        })();
+    </script>
     <title>Gery's Portofolio</title>
 </head>
 <body>
@@ -139,13 +147,14 @@
                 </a>
             </div>
             <div class="right-contact">
-                <form action="">
+                <form id="contact-form">
                     <h2>Email</h2>
-                    <input type="email" name="email" id="email" placeholder="youremail@company.com">
-                    <h2>Subject</h2>
-                    <input type="text" name="subject" id="subject-email" placeholder="Write subject">
+                    <input type="email" name="email" id="email" placeholder="youremail@company.com" required>
+                    <h2>Name</h2>
+                    <input type="text" name="name" id="name" placeholder="Write Your Name" required>
                     <h2>Message</h2>
-                    <input type="text" name="message" id="message-email" placeholder="Write message">
+                    <input type="text" name="message" id="message" placeholder="Write message" required>
+                    <button type="submit" class="submit-email">Submit</button>
                 </form>
             </div>
         </section>
